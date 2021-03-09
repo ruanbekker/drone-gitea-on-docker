@@ -18,11 +18,11 @@ $ bash boot.sh
 
 *Note*: Theres a [current issue](https://github.com/go-gitea/gitea/issues/7702) where webhooks get fired twice, if you see that just restart gitea with `docker restart gitea`.
 
-Head over to: `http://${IP_ADDRESS}:3000/user/settings/applications` and create a new OAuth2 Application and set the Redirect URI to `http://${IP_ADDRESS}:3001/login`
+- Head over to: `http://${IP_ADDRESS}:3000/user/settings/applications` and create a new OAuth2 Application and set the Redirect URI to `http://${IP_ADDRESS}:3001/login`
 
-Capture the client id and client secret and populate them in the `boot.sh` in `DRONE_GITEA_CLIENT_ID` and `DRONE_GITEA_CLIENT_SECRET` and run `bash boot.sh` again. This will give drone the correct credentials in order to authenticate with gitea.
+- Capture the client id and client secret and populate them in the `boot.sh` in `DRONE_GITEA_CLIENT_ID` and `DRONE_GITEA_CLIENT_SECRET` and run `bash boot.sh` again. This will give drone the correct credentials in order to authenticate with gitea.
 
-Now when you head over to http://${IP_ADDRESS}:3001/ you will be asked to authorize the application and you should be able to access drone.
+- Now when you head over to `http://${IP_ADDRESS}:3001/` you will be asked to authorize the application and you should be able to access drone.
 
 ## Drone CLI
 
