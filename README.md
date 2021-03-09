@@ -80,3 +80,12 @@ Activate your repository:
 Push a commit to master and see your pipeline running:
 
 ![image](https://user-images.githubusercontent.com/567298/110296747-584ea500-7ffb-11eb-9909-259641a663aa.png)
+
+## More Examples
+
+- https://github.com/ruanbekker/drone-ci-testing
+- https://github.com/ruanbekker/drone-demo-python-flask
+- https://github.com/ruanbekker/drone-with-go
+- https://github.com/ruanbekker/demo-drone-mongodb-tests
+- https://github.com/ruanbekker/drone-multi-pipeline
+- https://github.com/ruanbekker/docker-jekyll-drone
