@@ -1,0 +1,15 @@
+kind: pipeline
+type: docker
+name: hello-world
+
+trigger:
+  branch:
+    - master
+  event:
+    - push
+
+steps:
+  - name: say-hello
+    image: busybox
+    commands:
+      - echo hello-world
