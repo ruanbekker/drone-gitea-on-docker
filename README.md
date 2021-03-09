@@ -16,6 +16,8 @@ Now boot the stack:
 $ bash boot.sh
 ```
 
+*Note*: Theres a [current issue](https://github.com/go-gitea/gitea/issues/7702) where webhooks get fired twice, if you see that just restart gitea with `docker restart gitea`.
+
 Head over to: `http://${IP_ADDRESS}:3000/user/settings/applications` and create a new OAuth2 Application and set the Redirect URI to `http://${IP_ADDRESS}:3001/login`
 
 Capture the client id and client secret and populate them in the `boot.sh` in `DRONE_GITEA_CLIENT_ID` and `DRONE_GITEA_CLIENT_SECRET` and run `bash boot.sh` again. This will give drone the correct credentials in order to authenticate with gitea.
@@ -89,3 +91,5 @@ Push a commit to master and see your pipeline running:
 - https://github.com/ruanbekker/demo-drone-mongodb-tests
 - https://github.com/ruanbekker/drone-multi-pipeline
 - https://github.com/ruanbekker/docker-jekyll-drone
+- [Localstack with Drone and Gitea](https://gist.github.com/ruanbekker/84cb9f0c2a21434ca8381a0c74842d84)
+- [Drone, Minio, Gitea, Sqlite on Docker Compose](https://gist.github.com/ruanbekker/3847bbf1b961efc568b93ccbf5c6f9f6)
